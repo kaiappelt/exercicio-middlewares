@@ -9,12 +9,6 @@ import routes from './routes';
 let app = express();
 app.use(express.json());
 app.use(cors());
-
-app._router.stack.forEach(function(r: { route: { path: any; }; }){
-    if (r.route && r.route.path){
-      console.log(r.route.path)
-    }
-  })
   
 app.use(routes);
 
@@ -45,7 +39,7 @@ app.use(
 );
 
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log("servidor iniciou...")
 });
 
