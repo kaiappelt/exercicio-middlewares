@@ -4,7 +4,20 @@ import token from "./config";
 import AppError from "./AppError";
 
 let usuarios: Array<any>;
-usuarios = [];
+usuarios = [
+    {
+        name: "Usuário 1",
+        cpf: "000.000.000-00",
+        email: "usuario1@gmail.com",
+        password: "12345678"
+    },
+    {
+        name: "Usuário 2",
+        cpf: "111.111.111-11",
+        email: "usuario2@gmail.com",
+        password: "12345678"
+    }
+];
 
 interface IRequest{
     name: string,
