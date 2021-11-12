@@ -6,12 +6,14 @@ import AppError from "./AppError";
 let usuarios: Array<any>;
 usuarios = [
     {
+        id: "b979776a-6738-4d1f-965a-2854977642f6",
         name: "Usuário 1",
         cpf: "000.000.000-00",
         email: "usuario1@gmail.com",
         password: "12345678"
     },
     {
+        id: "4a98a851-6cbf-4da2-89d0-5240efe5a71b",
         name: "Usuário 2",
         cpf: "111.111.111-11",
         email: "usuario2@gmail.com",
